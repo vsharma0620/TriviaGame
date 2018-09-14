@@ -1,60 +1,40 @@
-
 <!DOCTYPE html>
-
-<html lang="en-us">
-
-<head>
+<html>
+<head lang="en">
     <meta charset="UTF-8">
-    <title>Trivia Game</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <link rel="stylesheet" href="assets/css/style.css"/>
+    <title>Animal Trivia</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
+<body>
+    <div id="show-number"></div>
 
-  
+    <br>
 
-  <body>
-  <div class="container">
-    <header class="article">
-      <div id="header" class="container">
-        <h1><strong>Animal Trivia</strong></h1>  
-      </div>
-    </header>
-    <div class="p-3 mb-2 bg-gradient-primary text-black"></div>
-    <div class="jumbotron jumbotron-fluid">
-      <div class="container">
-        <button id="Start">
-          <h3>Start</h3>
-        </button>
-        <div id="show-number">Time Remaining:</div>
-        <h1 class="display-4">Questions</h1>
-        <p id="Questions"></p>
-        <div id=buttons>
-          <button type="button" class="btn btn-success">Answer 1</button>
-          <button type="button" class="btn btn-success">Answer 2</button>
-          <button type="button" class="btn btn-success">Answer 3</button>
-          <button type="button" class="btn btn-success">Answer 4</button>
-        </div>  
-      </div>
-    </div> 
-  </div>
+    <button id="resume">Start</button>
 
-  
-<!--Questions and Answers
+    <div class="grid">
+        <div id="quiz">
+            <h1>Animal Trivia</h1>
+            <hr style="margin-bottom: 20px">
 
-1. What food makes up nearly all (around 99%) of a Giant Panda’s diet? Bamboo
-3. What is the name of the phobia that involves an abnormal fear of spiders? Arachnophobia
-4. What is the largest type of ‘big cat’ in the world? The tiger, weighing up to 300 kilograms (660 pounds).
+            <p id="question"></p>
 
+            <div class="buttons">
+                <button id="btn0"><span id="choice0"></span></button>
+                <button id="btn1"><span id="choice1"></span></button>
+                <button id="btn2"><span id="choice2"></span></button>
+                <button id="btn3"><span id="choice3"></span></button>
+            </div>
 
--->
+            <hr style="margin-top: 50px">
+            <footer>
+                <p id="progress">Question x of y</p>
+            </footer>
+        </div>
+    </div>
 
-
-    <!-- jQuery -->
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
-    <!-- Script -->
-    <script type="text/javascript" src="assets/javascript/app.js"></script>
-
-  </body>
-
+<script src="assets/javascript/quiz.js"></script>
+<script src="assets/javascript/question.js"></script>
+<script src="assets/javascript/app.js"></script>
+</body>
 </html>
