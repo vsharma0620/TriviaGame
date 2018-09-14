@@ -1,0 +1,19 @@
+body {
+ background-image: url("../images/images.jpg");
+ background-size: 100%;
+ background-repeat: no-repeat;
+};
+
+h1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 125%;
+   
+
+}
+.article{
+    margin-left: auto;
+    margin-right: auto;
+    width: 1200px;
+    height: 50px;
+    text-align: center;
+}
